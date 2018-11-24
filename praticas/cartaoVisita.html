@@ -10,41 +10,43 @@
 <style>
     .container{
         display: flex;
+        border: solid 1px #fff;
         flex-direction: row;
-        align-items: stretch;
-        border: solid 5px #fff;
-        height: 350px;
-        width: 500px;
-
+        width: 30vw;
+        height: 200px;
+        margin: 0;
+        padding: 0;
     }
 
-    .container div:nth-child(1){
-        align-items: center;
-        width: 50%;
-        height: 70%;
-        margin: auto;
-        margin-left: 2px;
+    .foto{
+        align-self: stretch;
+        margin: 10px;
+        flex: 1 1 100px;
     }
 
-    
     .info{
         display: flex;
-        flex-direction: column;
-        height: 20px;
-        width: 100%
+        border: 1px solid black;
     }
+
+    .info__item{
+        margin: 10px;
+        border: solid 1px black;
+        flex: 1;
+        flex-direction: column;
+    }
+
 
 </style>
 <body>
         
     <div class="container">
-        <div>FOTO</div>
+        <div class="foto">FOTO</div>
         <div class='info'>
-            <div>NOME</div>
-            <div>FUNCAO</div>
-            <div>DATA</div>
+            <div class="info__item">NOME</div>
+            <div class="info__item">FUNCAO</div>
+            <div class="info__item">DATA</div>
         </div>
-        
     </div>
 </body>
 </html>
